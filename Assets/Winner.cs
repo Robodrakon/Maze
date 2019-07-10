@@ -10,7 +10,7 @@ public class Winner : MonoBehaviour
     {
         if (other.gameObject.layer == IsPlayer)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("main menu 1");
         }
     }
 
