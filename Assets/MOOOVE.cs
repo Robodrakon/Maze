@@ -21,28 +21,28 @@ public class MOOOVE : MonoBehaviour
     {
             if (joystick.Vertical != 0)
             {
-            rb.AddForce(Vector3.forward * strength * joystick.Vertical, ForceMode.Force);
+            rb.AddForce(Vector3.forward * strength * Time.deltaTime * joystick.Vertical, ForceMode.Force);
             }
             if (joystick.Vertical != 0)
             {
-            rb.AddForce(Vector3.right * strength * joystick.Horizontal, ForceMode.Force);
+            rb.AddForce(Vector3.right * strength * Time.deltaTime * joystick.Horizontal, ForceMode.Force);
             }
 
             if (Input.GetKey(KeyCode.W))
             {
-            rb.AddForce(Vector3.forward * strength, ForceMode.Force);
+            rb.AddForce(Vector3.forward * strength * Time.deltaTime, ForceMode.Force);
             }
             if(Input.GetKey(KeyCode.A))
             {
-            rb.AddForce(Vector3.left * strength, ForceMode.Force);
+            rb.AddForce(Vector3.left * strength * Time.deltaTime, ForceMode.Force);
             }
             if(Input.GetKey(KeyCode.S))
             {
-            rb.AddForce(Vector3.back * strength, ForceMode.Force);
+            rb.AddForce(Vector3.back * strength * Time.deltaTime, ForceMode.Force);
             }
             if(Input.GetKey(KeyCode.D))
             {
-            rb.AddForce(Vector3.right * strength, ForceMode.Force);
+            rb.AddForce(Vector3.right * strength * Time.deltaTime, ForceMode.Force);
             }
     }
 }
