@@ -25,11 +25,11 @@ public class MovePlayer : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        Rigidbody Rb = GetComponent<Rigidbody>();
-        if(Input.GetAxis("Horizontal")!=0)
-            Rb.MovePosition( Rb.position + transform.right * Input.GetAxis("Horizontal") * speed*Time.deltaTime);
-        if(Input.GetAxis("Vertical")!=0)
-            Rb.MovePosition(Rb.position + transform.forward * Input.GetAxis("Vertical") * speed * Time.deltaTime);
+        //Rigidbody Rb = GetComponent<Rigidbody>();
+        //if(Input.GetAxis("Horizontal")!=0)
+        //    Rb.MovePosition( Rb.position + transform.right * Input.GetAxis("Horizontal") * speed*Time.deltaTime);
+        //if(Input.GetAxis("Vertical")!=0)
+        //    Rb.MovePosition(Rb.position + transform.forward * Input.GetAxis("Vertical") * speed * Time.deltaTime);
         //printout(new Vector2( Input.GetAxis("Horizontal"), Input.GetAxis("Vertical") ).ToString());
         //printout(Input.acceleration.ToString());
 
