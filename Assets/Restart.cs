@@ -7,6 +7,6 @@ public class Restart : MonoBehaviour
 {
     public void restart()
     {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
